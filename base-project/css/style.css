@@ -1,0 +1,148 @@
+@import url('model.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-color: #023f91;
+    --light-blue-color: #1268e9;
+    --gray-color: #2e2e2e;
+    --orange-color: #ff4500;
+    --red-color: #ec0505;
+    --green-color: #0e6e0e;
+
+    --background-color: #000000;
+    --font-color: #FFFFFF;
+    --primary-font: 'Arial';
+}
+
+body {
+    background: var(--background-color);
+    color: #FFFFFF;
+    font-family: var(--primary-font)
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 0.2rem;
+}
+
+.container__section {
+    gap: 2.3rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.container__title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.container__subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container__emphasis {
+    color: var(--light-blue-color);
+    font-weight: bold;
+}
+
+.container__tag {
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.3rem;
+}
+
+.container__text-box {
+    background: var(--background-color);
+    border: 0.3rem solid var(--font-color);
+    border-radius: 0.5rem;
+    color: var(--font-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+}
+
+.container__button {
+    color: var(--font-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.6rem 2rem;
+}
+
+.container__button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.container__message {
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+}
+
+.container__danger {
+    animation-name: animateSideMessage;
+    animation-duration: 1s;
+}
+
+.container__image {
+    border: 0.5rem solid var(--blue-color);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.container__opacity-image {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.container__box {
+    border: 0.3rem solid var(--font-color);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+@keyframes animateSideMessage {
+    to {
+        width: 250px;
+    }
+
+    from {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container__section:nth-child(1) {
+        border-bottom: 0.5rem solid var(--gray-color);
+    }
+}

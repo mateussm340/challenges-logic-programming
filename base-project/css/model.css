@@ -1,0 +1,47 @@
+.model__horizontal {
+    display: flex;
+    gap: 1rem;
+}
+
+.model__vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.model__center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.model__start {
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+}
+
+.model__break {
+    flex-wrap: wrap;
+}
+
+/* Colors, backgrounds */
+.model__blue-color {
+    background: var(--blue-color);
+}
+
+.model__gray-color {
+    background: var(--gray-color);
+}
+
+.model__orange-color {
+    background: var(--orange-color);
+}
+
+.model__red-color {
+    background: var(--red-color);
+}
+
+.model__green-color {
+    background: var(--green-color);
+}

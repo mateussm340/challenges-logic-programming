@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Base | Desafios de Lógica</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/WpnttgY3/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container model__horizontal model__center">
+        <section class="container__section model__vertical model__center">
+            <h1 class="container__title">Projeto Base</h1>
+
+            <div class="model__vertical model__center">
+                <input type="number" id="number-quantity" name="number-quantity" placeholder="Quantidade" class="container__text-box"/>
+
+                <select id="options-list" name="options-list" class="container__text-box">
+                    <option value="1">Opção 01</option>
+                    <option value="2">Opção 02</option>
+                </select>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <button class="container__button model__blue-color">
+                    Adicionar
+                </button>
+                <button class="container__button model__gray-color" disabled>
+                    Reiniciar
+                </button>
+                <button class="container__button model__orange-color" disabled>
+                    Sortear
+                </button>
+            </div>
+
+            <div class="container__messages model__vertical model__center">
+                <span class="container__message container__danger model__red-color">
+                    Ocorreu um erro.
+                </span>
+                <span class="container__message container__success model__green-color">
+                    Mensagem de sucesso padrão.
+                </span>
+            </div>
+        </section>
+
+        <section class="container__section model__vertical model__center">
+            <h2 class="container__subtitle">Projeto Base (1.1)</h2>
+
+            <p class="container__text">
+                Desenvolvido por 
+                <span class="container__emphasis">@mateussm340</span>
+            </p>
+
+            <p class="container__text">
+                Isso é uma 
+                <span class="container__tag model__green-color">tag</span>
+            </p>
+
+            <div class="model__vertical model__center">
+                <img src="https://i.ibb.co/WpnttgY3/logo.png" alt="Imagem com um ponto de interrogação centralizado" class="container__image container__opacity-image"/>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <div class="container__box model__red-color">01</div>
+                <div class="container__box model__gray-color">02</div>
+                <div class="container__box model__green-color">03</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
