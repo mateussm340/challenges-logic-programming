@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial | Desafios de Lógica</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/WpnttgY3/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="base-project/css/style.css">
+    <style>
+        .container__section {
+            gap: 1rem;
+        }
+
+        .projects {
+            padding: 3rem 1rem;
+        }
+
+        .project {
+            border: 0.4rem solid var(--gray-color);
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="container__section model__vertical model__center">
+            <h1 class="container__title">Desafios de LP</h1>
+            <p class="container__text">
+                <span class="container__emphasis">LP: </span>
+                Lógica de Programação
+            </p>
+
+            <div class="projects model__horizontal model__center" id="project-list-element"></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
