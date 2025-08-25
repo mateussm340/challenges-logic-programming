@@ -2,7 +2,9 @@ const projectListElement = document.querySelector('#project-list-element');
 
 const projectsList = [
     { id: 1, title: 'Base Project' },
-    { id: 2, title: 'Secret Number' }
+    { id: 2, title: 'Secret Number' },
+    { id: 3, title: 'Number Picker' },
+    { id: 4, title: 'Game Rental' }
 ];
 
 function displayProjectList() {
