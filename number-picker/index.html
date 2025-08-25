@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Sorteador de Números | Desafios de Lógica</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/WpnttgY3/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+</head>
+<body>
+    <main class="container model__horizontal model__center">
+        <section class="container__section model__vertical model__center">
+            <h1 class="container__title">Sorteador de Números</h1>
+
+            <div class="model__vertical model__center">
+                <select id="options-list" name="options-list" class="container__text-box">
+                    <option value="1">Comum</option>
+                    <option value="2">Pares</option>
+                    <option value="3">Ímpares</option>
+                </select>
+
+                <div class="model__vertical model__center">
+                    <input type="number" id="number-minimum" name="number-minimum" placeholder="Número mínimo" class="container__text-box"/>
+
+                    <input type="number" id="number-maximum" name="number-maximum" placeholder="Número máximo" class="container__text-box"/>
+
+                    <input type="number" id="number-quantity" name="number-quantity" placeholder="Quantidade" class="container__text-box"/>
+                </div>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <button onclick="drawInterval()" id="button-draw-interval" class="container__button model__blue-color">
+                    Sortear
+                </button>
+
+                <button onclick="restartGame()" id="button-restart-game" class="container__button model__gray-color" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="container__message model__vertical model__center" id="element-message-warning"></div>
+        </section>
+
+        <section class="container__section model__vertical model__center">
+            <h2 class="container__subtitle">Números sorteados (por intervalo):</h2>
+
+            <div class="model__horizontal model__center model__break" id="element-number-draw"></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
