@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Jogos | Desafios de Lógica</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/WpnttgY3/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+    <style>
+        .container__image {
+            width: auto;
+        }
+
+        .container__button {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 845px) {
+            .games {
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container model__horizontal model__center">
+        <section class="container__section model__vertical model__center">
+            <h1 class="container__title">Aluguel de Jogos</h1>
+            <p class="container__text">
+                Total de jogos alugados: 
+                <span class="container__emphasis" id="quantity-total-game">0</span>
+            </p>
+
+            <div class="games model__horizontal model__center model__break" id="games"></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
