@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos | Desafios de Lógica</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/WpnttgY3/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+    <style>
+        .container__section:nth-child(2) {
+            width: 90%;
+        }
+
+        #element-ticket-purchase {
+            border-top: 0.3rem solid #FFFFFF;
+            padding: 1rem;
+        }
+
+        .model__protected {
+            background: #2e2e2e;
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <main class="container model__horizontal model__center">
+        <section class="container__section model__vertical model__center">
+            <div class="container__messages model__vertical model__center" id="element-message-warning"></div>
+
+            <h1 class="container__title">Compra de Ingressos</h1>
+
+            <div class="model__vertical model__center">
+                <input type="text" id="name-buyer" name="name-buyer" placeholder="Digite o nome do comprador" class="container__text-box"/>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <button onclick="buyTicket()" id="button-buy-ticket" class="container__button model__blue-color">
+                    Comprar
+                </button>
+
+                <button onclick="restartGame()" id="button-restart-game" class="container__button model__gray-color" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="model__vertical model__center">
+                <p class="container__text container__emphasis" id="element-chosen-chair"></p>
+
+                <div class="model__vertical model__center container__text" id="element-ticket-purchase"></div>
+            </div>
+        </section>
+
+        <section class="container__section model__vertical model__center">
+            <h2 class="container__subtitle">Reserva já</h2>
+            <p class="container__text">
+                Preço da compra: R$ 
+                <span class="container__emphasis" id="element-price-buy">0</span>
+            </p>
+
+            <div class="model__horizontal model__center model__break" id="element-available-chair"></div>
+
+            <p class="container__text">
+                Preço do ingresso: R$ 
+                <span class="container__emphasis" id="element-price-ticket">25</span>
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
