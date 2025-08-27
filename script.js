@@ -4,7 +4,10 @@ const projectsList = [
     { id: 1, title: 'Base Project' },
     { id: 2, title: 'Secret Number' },
     { id: 3, title: 'Number Picker' },
-    { id: 4, title: 'Game Rental' }
+    { id: 4, title: 'Game Rental' },
+    { id: 5, title: 'Shopping Cart' },
+    { id: 6, title: 'Ticket Purchase' },
+    { id: 7, title: 'Secret Santa' }
 ];
 
 function displayProjectList() {
