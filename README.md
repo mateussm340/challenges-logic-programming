@@ -20,9 +20,9 @@ Project list:
 
 |Base Project|Secret Number|Number Picker|Game Rental|
 |------------|--------------|--------------------|----------------|
-|![Base project](https://i.ibb.co/3yPmST58/base-project-imgbb.png)|![Secret number](https://i.ibb.co/SDHN8Y24/secret-number-imgbb.png)|![Number picker](https://i.ibb.co/spJZmw2y/number-picker-imgbb.png)|![Game rental](https://i.ibb.co/pjvwZF9x/game-rental-imgbb.png)|
+|![Base project](assets/banners/base-project.png)|![Secret number](assets/banners/secret-number.png)|![Number picker](assets/banners/number-picker.png)|![Game rental](assets/banners/game-rental.png)|
 |Shopping Cart|Ticket Purchase|Secret Santa
-|![Shopping cart](https://i.ibb.co/gb51tksd/shopping-cart-imgbb.png)|![Ticket purchase](https://i.ibb.co/r2yrYvq4/ticket-purchase-imgbb.png)|![Secret santa](https://i.ibb.co/7tfKVdB6/secret-santa-imgbb.png)|
+|![Shopping cart](assets/banners/shopping-cart.png)|![Ticket purchase](assets/banners/ticket-purchase.png)|![Secret santa](assets/banners/secret-santa.png)|
 
 ## Meta
 

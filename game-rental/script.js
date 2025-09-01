@@ -2,9 +2,9 @@ const elementGame = document.querySelector('#games');
 const elementQuantityTotalGame = document.querySelector('#quantity-total-game');
 
 const listGames = [
-    { id: 1, title: 'Grand Theft Auto V', imgLink: 'k2L4yhTm/gta-five.png' },
-    { id: 2, title: 'Elden Ring', imgLink: 'PZ3wTnbJ/elden-ring.png' },
-    { id: 3, title: 'God of War Ragnarök', imgLink: 'FkcCJsnL/god-of-war.png' }
+    { id: 1, title: 'Grand Theft Auto V', imgLink: 'gta-five.png' },
+    { id: 2, title: 'Elden Ring', imgLink: 'elden-ring.png' },
+    { id: 3, title: 'God of War Ragnarök', imgLink: 'god-of-war.png' }
 ];
 
 let quantityTotalGame = 0;
@@ -72,7 +72,7 @@ function showGamesOnScreen() {
     listGames.forEach((game) => {
         elementGame.innerHTML += `
             <div class="game model__vertical model__center" id="game-${game.id}">
-                <img src="https://i.ibb.co/${game.imgLink}" alt="Logo do jogo (${game.title})" class="container__image"/>
+                <img src="../assets/games/${game.imgLink}" alt="Logo do jogo (${game.title})" class="container__image"/>
 
                 <h2 class="container__subtitle" title="${game.title}">
                     ${returnTitleLimited(game.title)}
