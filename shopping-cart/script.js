@@ -68,7 +68,7 @@ function showListProductAdd(amountProduct, nameProduct, priceProduct) {
                 <p class="container__text">
                     <span class="container__emphasis">${product.amount}x</span>
                     - ${product.title} 
-                    <span class="container__emphasis">${product.price}</span>
+                    <span class="container__emphasis">R$ ${product.price}</span>
                 </p>
             </div>
         `;
