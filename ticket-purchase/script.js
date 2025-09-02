@@ -27,6 +27,7 @@ function buyTicket() {
 }
 
 function restartGame() {
+    elementMessageWarning.innerHTML = '';
     document.querySelector('#button-buy-ticket').removeAttribute('disabled');
     document.querySelector('#button-restart-game').setAttribute('disabled', true);
     listBuyers = [];
