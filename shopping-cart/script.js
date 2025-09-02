@@ -92,6 +92,13 @@ function validateField(amount, product) {
         return false;
     }
 
+    if (amount <= 0) {
+        showMessageWarning(
+            'red', 'danger', `A quantidade deve ser um número maior que zero, sua escolha (${amount}) não é permitida`
+        )
+        return false;
+    }
+
     return true;
 }
 
